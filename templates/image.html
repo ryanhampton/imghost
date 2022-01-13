@@ -1,0 +1,39 @@
+<!doctype html>
+<html prefix="og: https://ogp.me/ns#">
+    <head>
+        <title>{{ name }}</title>
+        <meta name="robots"         content="noindex">
+        <meta name="theme-color"    content="#0000FF">
+        <meta name="twitter:card"   content="summary_large_image">
+        <meta name="twitter:image"  content="{{ img_url }}">
+   <!-- <meta name="description"    content="replace or comment out"> -->
+   <!-- <meta name="og:description" content="replace or comment out"> -->
+        <meta property="og:title"   content="{{ hostname }}">
+        <meta property="og:type"    content="website">
+        <meta property="og:url"     content="{{ this_url }}">
+        <meta property="og:image"   content="{{ img_url }}">
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            div {
+                position: relative;
+            }
+            img {
+                max-width: 100%;
+                max-height: 100vh;
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%)
+            }
+        </style>
+
+    </head>
+    <body bgcolor=#101010>
+        <div>
+            <img src="{{ img_url }}">
+        </div>
+    </body>
+</html>
